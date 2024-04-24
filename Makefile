@@ -7,11 +7,11 @@ build:
 	    go build -o build/$(BINARY_NAME) main.go
 
 run: build
-	    ./$(BINARY_NAME)
+	    ./build/$(BINARY_NAME)
 
 clean:
 	    go clean
-	        rm $(BINARY_NAME)
+	    rm -rf ./build
 
 .PHONY: build run clean
 

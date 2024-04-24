@@ -1,4 +1,3 @@
-# .goreleaser.yml
 before:
   hooks:
     - go mod tidy
@@ -19,22 +18,18 @@ builds:
     mod_timestamp: '{{ .CommitTimestamp }}'
 
 archives:
-  - replacements:
-      darwin: Darwin
-      linux: Linux
-      windows: Windows
-    format: zip
+  - format: zip
     format_overrides:
       - goos: windows
         format: zip
     files:
-      - LICENSE
       - README.md
+    name_template: '{{ .Binary }}-{{ .Version }}-{{ .Os }}-{{ .Arch }}'
 
 release:
   github:
-    owner: <github_username>
-    name: <repository_name>
+    owner: PerArneng
+    name: srctotext
   draft: true
   prerelease: auto
   disable: false

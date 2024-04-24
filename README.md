@@ -1,8 +1,11 @@
 # srctotext
 
+[![goreleaser](https://github.com/PerArneng/srctotext/actions/workflows/release.yaml/badge.svg)](https://github.com/PerArneng/srctotext/actions/workflows/release.yaml)
+
 `srctotext` is a CLI tool written in Go that aggregates
 source files into a single text file. It's useful for
 generating datasets for generative AI applications.
+
 
 ## Features
 

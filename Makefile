@@ -13,5 +13,8 @@ clean:
 	    go clean
 	    rm -rf ./build
 
+release:
+	goreleaser release --clean
+
 .PHONY: build run clean
 

@@ -7,12 +7,20 @@ source files into a single text file. It's useful for
 generating datasets for generative AI applications.
 
 
+
+
 ## Features
 
 - Recursive directory search
 - Filter files by patterns
 - Handles non-binary text files
 - Outputs to a specified file
+
+## Installation
+
+```shell
+$ brew install perarneng/tap/srctotext
+```
 
 ## Usage
 
